@@ -159,8 +159,8 @@ h1,h2,h3,h4,h5,h6,nav {
 }
 .teamTextContent a {
     text-decoration:underline;
-    /* color: var(--moderatedCyna); */
-    color:red;
+    color: var(--moderatedCyna);
+   
     margin-bottom: 30px;
     display: inline-block;
 }
