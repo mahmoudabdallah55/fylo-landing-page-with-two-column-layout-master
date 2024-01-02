@@ -309,6 +309,9 @@ ul li {
     {
         width: 100%;
     }
+    .textContent {
+        margin-top: 10px;
+    }
     .textContent p {
         margin: 20px 0;
         width: 100%;
@@ -331,6 +334,9 @@ ul li {
         width: 100%;
         text-align: center;
 
+    }
+    .teamTextContent {
+        margin-top: 40px;
     }
     .teamTextContent .p1,.p2 {
         margin-bottom: 10px;
