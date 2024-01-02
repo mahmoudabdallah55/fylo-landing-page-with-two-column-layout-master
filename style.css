@@ -1,0 +1,431 @@
+/* imports part */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&family=Roboto+Mono:ital,wght@0,100;0,200;0,500;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&family=Roboto+Mono:ital,wght@0,100;0,200;0,500;1,300&display=swap');
+
+
+/* Reset  all browser defualt values in [padding -margin] 
+public reset for all website and public decoration 
+
+*/
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration:none;
+}
+/* css varibles 
+public varibles [ can access it from any where in the programe  ]
+private varibles [ can ccess it from it,s private element or private block ]
+
+*/
+
+
+
+:root {
+    --veryDarkBlue:hsl(243,87%,12%);
+    --desaturatedBlue :hsl(238, 22%, 44%);
+    --brightBlue: hsl(224, 93%, 58%); 
+    --moderatedCyna: hsl(170, 45%, 43%);
+    --lightGrayishBlue:hsl(240, 75%, 98%)  ;
+    --lioghtGray: hsl(0, 0%, 75%)  ;   
+}
+/* public font for all website  */
+body {
+    font-family:'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,nav {
+    font-family:  'Raleway', sans-serif;
+}
+
+
+/* container element */
+
+
+.container {
+    width: 90%;
+    margin: auto;
+ 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding-top: 30px;
+
+}
+.navbar ul {
+    display: flex;
+}
+.navbar nav ul li a {
+    margin:0 30px ;
+    font-family:'Raleway', sans-serif; 
+    color:var(--veryDarkBlue);
+
+}
+
+.headerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    
+   
+
+}
+/* .textContent {
+    margin-right: 100px;
+   
+
+} */
+.textContent,.imageContent {
+    width: 40%;
+}
+.imageContent img {
+    width: 100%;
+    
+}
+.textContent h1 {
+   
+    font-size: 30px;
+    line-height: 1.4;
+
+}
+.textContent p {
+    margin: 20px 0;
+    width: 80%;
+}
+.textContent input {
+    padding: 8px 15px;
+    width: 50%;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.textContent input:focus {
+    outline: none;
+}
+
+.textContent .btn {
+    padding: 10px;
+    border: none;
+    background-color: var(--brightBlue);
+    width: 30%;
+    font-size: 15px;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* team section */
+.team {
+    background-image: url(./images/bg-curve-desktop.svg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover ;
+
+}
+.teamContent
+{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px 0;
+    margin-top: 50px;
+
+}
+.teamTextContent,.teamImage {
+    width: 40%;
+}
+.teamImage img {
+    width: 100%;
+}
+.teamTextContent h1 {
+    font-size: 33px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+.teamTextContent .p1,.p2 {
+    margin-bottom: 10px;
+   width: 80%;
+}
+.teamTextContent a {
+    text-decoration:underline;
+    color: var(--moderatedCyna);
+    margin-bottom: 30px;
+    display: inline-block;
+}
+.boxHolder {
+    background-color: white;
+    width: 70%;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow:1px 1px 5px rgba(0, 0, 0, 0.1) ;
+
+}
+.boxHolder img {
+  margin: 10px 0;
+}
+.boxHolder p {
+    margin-bottom: 10px;
+}
+.boxHolder .box {
+    display: flex;
+    align-items: center;
+
+}
+.boxHolder .box img {
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 15%;
+}
+.box h5 {
+    font-weight: bold;
+}
+
+.box p {
+    font-size: 10px;
+   
+}
+    
+/* sign in section decoration */
+.signIn {
+    background-color: var(--desaturatedBlue);
+    padding: 4rem 0 ;
+    color: white;
+
+}
+.signIn .signInContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.signInTextContent,form {
+    width: 40%;
+
+}
+.signInTextContent h1{
+    font-size: 35px;
+
+}
+.signInTextContent p {
+    margin: 20px 0; 
+    font-size: 13px;
+    width: 70%;
+}
+p {
+    line-height: 1.6;
+}
+form input { 
+    display: block;
+    width:80%;
+    padding: 15px 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    }
+form input:focus {
+    outline:none;
+}
+form button {
+    padding: 15px 15px;
+    border-radius: 5px;
+    background-color: var(--brightBlue);
+    text-transform: capitalize;
+    color: white;
+    border:none
+
+
+}
+
+/* footer */
+.footer {
+    background-color: var(--veryDarkBlue);
+    padding: 30px 0;
+    color: var( --lightGrayishBlue);
+    font-size: 13px;
+
+}
+.footerContent {
+    display: flex;
+   
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.phoneDiv,.aboutUs,.contactUs,.socialIcons {
+    width: 20%;
+
+}
+.phoneDiv .phoneInfo {
+    display: flex;
+    
+    align-items: center;
+    margin: 10px 0;
+    
+}
+.phoneDiv .phoneInfo img {
+    margin-right: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.socialIcons ul {
+    display: flex;
+    
+
+}
+.socialIcons ul li {
+    margin: 0 5px;
+    
+    
+
+}
+.socialIcons ul li i {
+    border: 1px solid var(--lioghtGray);
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 15px;
+}
+
+/* tabletDesign */
+@media(max-width:1000px){
+
+    .headerContent {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    .imageContent,.textContent 
+    {
+        width: 100%;
+    }
+    .textContent p {
+        margin: 20px 0;
+        width: 100%;
+    }
+    .team {
+        background-image: url(./images/bg-curve-mobile.svg) ;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover ;
+    
+    }
+    
+    .teamContent {
+        flex-direction: column-reverse;
+        text-align: center;
+
+    }
+    .teamImage,.teamTextContent {
+       
+        width: 100%;
+        text-align: center;
+
+    }
+    .teamTextContent .p1,.p2 {
+        margin-bottom: 10px;
+        width: 100%;
+       
+       text-align: center;
+    }
+    .boxHolder {
+        margin: auto;
+    }
+    .signInContent {
+        flex-direction: column;
+        text-align: center;
+    }
+    .signInTextContent,form {
+        width: 100%;
+    
+    }
+    .signInTextContent p {
+        margin: 20px 0; 
+        font-size: 13px;
+        width: 100%;
+    }
+    .signInTextContent{
+        margin-bottom: 10px;
+    }
+    form input { 
+       
+        width:100%;
+       
+        }
+        .boxHolder .box {
+            display: flex;
+            align-items: center;
+            margin: auto;
+        
+        }
+        .footerContent 
+        {
+            flex-direction: column;
+            
+            justify-content: space-between;
+        }
+        .phoneDiv,.aboutUs,.contactUs,.socialIcons {
+            margin: 10px 0;
+            width: 100%;
+        
+        }
+        .socialIcons ul  {
+            display: flex;
+            justify-content: center;
+        }
+}
+
+/* phoneDesign */
+@media(max-width:650px){
+    .container {
+        width: 95%;
+        margin: auto;
+     
+    }
+    .navbar nav ul li a {
+        margin:0 10px ;
+        
+    }
+    .logo{
+        width: 30%;
+    }
+    .textContent h1 {
+   
+        font-size: 20px;
+        
+    
+    }
+    .teamTextContent h1 {
+        font-size: 20px;
+        
+    }
+    .signInTextContent h1{
+        font-size: 20px;
+    
+    }
+    .phoneDiv,.aboutUs,.contactUs,.socialIcons {
+        width: 100%;
+    
+    }
+     .socialIcons ul  {
+            display: flex;
+            justify-content: center;
+        }
+}
+
+
+
+
+
+
+
