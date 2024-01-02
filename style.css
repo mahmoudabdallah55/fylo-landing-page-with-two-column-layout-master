@@ -329,6 +329,11 @@ ul li {
         text-align: center;
 
     }
+    .teamTextContent a
+    {
+        font-size: 19px;
+
+    }
     .teamImage,.teamTextContent {
        
         width: 100%;
